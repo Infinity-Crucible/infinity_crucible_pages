@@ -25,19 +25,20 @@ title: Home
     Juggle spells, swap gear, grab powerups, and see how deep you can go before permadeath
     sends you back to level one. You know the drill.
   </p>
-  <p>
-    Currently in active development. Follow along as we figure out what we're doing.
-  </p>
 
-  <h3>Blame These Games</h3>
+  <h3>Inspired By</h3>
   <ul>
     <li><a href="https://en.wikipedia.org/wiki/Rogue_(video_game)">Rogue</a> (1980-ish)</li>
     <li><a href="https://en.wikipedia.org/wiki/Gateway_to_Apshai">Gateway to Apshai</a> (1983)</li>
     <li><a href="https://en.wikipedia.org/wiki/Gauntlet_(1985_video_game)">Gauntlet</a> (1985)</li>
+    <li><a href="https://en.wikipedia.org/wiki/Diablo_(video_game)">Diablo</a> (1996)</li>
     <li><a href="https://en.wikipedia.org/wiki/Brogue_(video_game)">Brogue</a> (2009)</li>
     <li><a href="https://en.wikipedia.org/wiki/Dark_Souls">Dark Souls</a> (2011)</li>
   </ul>
   <p>And so many others.</p>
+  <p>
+    Currently in active development. The goal is to release the full source code someday, but that means replacing all the placeholder assets with custom ones first. Follow along as we figure out what we're doing.
+  </p>
 </section>
 
 <section class="section">
