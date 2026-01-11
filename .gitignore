@@ -1,0 +1,12 @@
+docs/plans
+
+# Jekyll
+_site/
+Gemfile.lock
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+
+# macOS
+.DS_Store

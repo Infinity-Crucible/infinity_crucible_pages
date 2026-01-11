@@ -1,0 +1,390 @@
+// Colors
+$bg-dark: #0f0f0f;
+$bg-card: #1a1a1a;
+$bg-card-hover: #222222;
+$text-primary: #e5e5e5;
+$text-heading: #ffffff;
+$text-muted: #a1a1a1;
+$accent: #8b5cf6;
+$accent-hover: #a78bfa;
+$border-color: #2a2a2a;
+
+// Typography
+$font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+$font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+
+// Layout
+$max-width: 800px;
+$spacing: 1.5rem;
+$radius: 8px;
+
+// Reset
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// Base
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-stack;
+  background: $bg-dark;
+  color: $text-primary;
+  line-height: 1.7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+// Typography
+p {
+  margin-bottom: 1rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+ul, ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+
+  li {
+    margin-bottom: 0.25rem;
+  }
+}
+
+// Links
+a {
+  color: $accent;
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $accent-hover;
+  }
+}
+
+// Container
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 $spacing;
+}
+
+// Navigation
+.nav {
+  background: $bg-card;
+  border-bottom: 1px solid $border-color;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 $spacing;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: $text-heading;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+
+  a {
+    color: $text-muted;
+    font-weight: 500;
+    transition: color 0.2s ease;
+
+    &:hover,
+    &.active {
+      color: $accent;
+    }
+  }
+}
+
+// Main
+.main {
+  flex: 1;
+  padding: 3rem 0;
+}
+
+// Footer
+.footer {
+  background: $bg-card;
+  border-top: 1px solid $border-color;
+  padding: 1.5rem 0;
+  text-align: center;
+  color: $text-muted;
+  font-size: 0.875rem;
+}
+
+// Hero
+.hero {
+  text-align: center;
+  padding: 2rem 0 3rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid $border-color;
+}
+
+.hero-banner {
+  max-width: 100%;
+  height: auto;
+  border-radius: $radius;
+  margin-bottom: 1rem;
+}
+
+.hero-tagline {
+  font-size: 1.25rem;
+  color: $text-muted;
+}
+
+// Sections
+.section {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: $text-heading;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid $accent;
+  display: inline-block;
+}
+
+// Cards
+.card {
+  background: $bg-card;
+  border: 1px solid $border-color;
+  border-radius: $radius;
+  padding: $spacing;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s ease, background 0.2s ease;
+
+  &:hover {
+    border-color: $accent;
+    background: $bg-card-hover;
+  }
+}
+
+.card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: $text-heading;
+  margin-bottom: 0.25rem;
+}
+
+.card-date {
+  font-size: 0.875rem;
+  color: $text-muted;
+  margin-bottom: 0.5rem;
+}
+
+.card-excerpt {
+  color: $text-primary;
+}
+
+// Posts
+.post-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $border-color;
+}
+
+.post-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: $text-heading;
+  margin-bottom: 0.5rem;
+}
+
+.post-date {
+  font-size: 0.875rem;
+  color: $text-muted;
+}
+
+.post-content {
+  h2, h3, h4 {
+    color: $text-heading;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+  h4 { font-size: 1.125rem; }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  ul, ol {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  code {
+    font-family: $font-mono;
+    background: $bg-card;
+    padding: 0.125rem 0.375rem;
+    border-radius: 4px;
+    font-size: 0.875em;
+  }
+
+  pre {
+    background: $bg-card;
+    border: 1px solid $border-color;
+    border-radius: $radius;
+    padding: 1rem;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+
+    code {
+      background: none;
+      padding: 0;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: $radius;
+    margin: 1rem 0;
+  }
+
+  blockquote {
+    border-left: 4px solid $accent;
+    padding-left: 1rem;
+    margin: 1rem 0;
+    color: $text-muted;
+    font-style: italic;
+  }
+}
+
+.post-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid $border-color;
+}
+
+.back-link {
+  font-weight: 500;
+}
+
+// Post list
+.post-list {
+  list-style: none;
+}
+
+// Media page
+.media-section {
+  margin-bottom: 3rem;
+}
+
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.screenshot-placeholder {
+  background: $bg-card;
+  border: 2px dashed $border-color;
+  border-radius: $radius;
+  padding: 3rem;
+  text-align: center;
+  color: $text-muted;
+}
+
+.twitch-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #9146ff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: $radius;
+  font-weight: 600;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: #772ce8;
+    color: white;
+  }
+}
+
+// Influences list
+.influences {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+.influence-tag {
+  background: $bg-card;
+  border: 1px solid $border-color;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  color: $text-muted;
+}
+
+// View all link
+.view-all {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+// Responsive
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+}

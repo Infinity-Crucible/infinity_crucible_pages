@@ -1,0 +1,28 @@
+title: Infinity Crucible
+description: A top-down arcade roguelike built with Godot 4 and Rust
+url: ""
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: /updates/:year/:month/:day/:title/
+
+# Sass
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Exclude from build
+exclude:
+  - docs/
+  - README.md
+  - Gemfile
+  - Gemfile.lock
