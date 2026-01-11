@@ -5,18 +5,9 @@ permalink: /media/
 ---
 
 <section class="media-section">
-  <h1 class="section-title">Screenshots</h1>
-
-  <div class="screenshot-placeholder">
-    <p>Nothing to show yet.</p>
-    <p style="font-size: 0.875rem; margin-top: 0.5rem;">Check back once there's something worth looking at.</p>
-  </div>
-</section>
-
-<section class="media-section">
-  <h2 class="section-title">Live Development</h2>
+  <h1 class="section-title">Watch Live</h1>
   <p style="margin-bottom: 1rem;">
-    Occasional dev streams where things either work or explode. No schedule, no promises.
+    The game plays itself on Twitch. Drop by and watch an AI try to survive.
   </p>
   <a href="https://www.twitch.tv/infinitycrucible" target="_blank" rel="noopener" class="twitch-link">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -24,4 +15,23 @@ permalink: /media/
     </svg>
     Twitch
   </a>
+</section>
+
+<section class="media-section">
+  <h2 class="section-title">Screenshots</h2>
+
+  <div class="screenshot-grid">
+    <a href="{{ '/assets/images/screenshots/main_menu.png' | relative_url }}">
+      <img src="{{ '/assets/images/screenshots/main_menu.png' | relative_url }}" alt="Main Menu">
+    </a>
+    <a href="{{ '/assets/images/screenshots/high_voltage.png' | relative_url }}">
+      <img src="{{ '/assets/images/screenshots/high_voltage.png' | relative_url }}" alt="High Voltage">
+    </a>
+    <a href="{{ '/assets/images/screenshots/treasure_ahead.png' | relative_url }}">
+      <img src="{{ '/assets/images/screenshots/treasure_ahead.png' | relative_url }}" alt="Treasure Ahead">
+    </a>
+    <a href="{{ '/assets/images/screenshots/getting_out_of_here.png' | relative_url }}">
+      <img src="{{ '/assets/images/screenshots/getting_out_of_here.png' | relative_url }}" alt="Getting Out of Here">
+    </a>
+  </div>
 </section>

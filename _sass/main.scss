@@ -320,6 +320,25 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1rem;
+
+  a {
+    display: block;
+    border-radius: $radius;
+    overflow: hidden;
+    border: 1px solid $border-color;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+
+    &:hover {
+      border-color: $accent;
+      transform: scale(1.02);
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 }
 
 .screenshot-placeholder {
