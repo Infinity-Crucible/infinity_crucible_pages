@@ -1,7 +1,7 @@
 title: Infinity Crucible
 description: A top-down arcade roguelike built with Godot 4 and Rust
-url: "https://infinity-crucible.github.io"
-baseurl: "/infinity_crucible_pages"
+url: "https://infinitycrucible.com"
+baseurl: ""
 
 # Build settings
 markdown: kramdown
