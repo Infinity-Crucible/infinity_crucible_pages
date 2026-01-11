@@ -13,12 +13,12 @@ title: Home
   <p>
     You were an arrogant mage who thought you held the world in the palm of your hand.
     Then you were kidnapped by ogres and forced to perform in their infinite supply of
-    monster-ridden dungeons—purely for their entertainment. Survive, or die trying, over and over again, because you can't seem to stay dead. Death offers no escape. Your ego won't allow it.
+    monster-ridden dungeons, purely for their entertainment. Survive, or die trying, over and over again, because you can't seem to stay dead. Death offers no escape. Your ego won't allow it.
   </p>
   <p>
     Remember when arcades smelled like pizza and broken dreams? When "Elf needs food badly"
     was a legitimate crisis? Infinity Crucible is a love letter to those quarter-munching
-    dungeon crawlers—rebuilt for the modern age with Godot 4 and Rust.
+    dungeon crawlers, rebuilt for the modern age with Godot 4 and Rust.
   </p>
   <p>
     Descend through procedurally generated dungeons. Smash spawners before they overwhelm you.
